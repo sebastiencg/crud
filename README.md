@@ -106,8 +106,3 @@ DELETE http://localhost:8080/api/product/3/delete
 Authorization: Bearer {{authToken}}
 
 ```
-
-## Note
-
-- Replace `{{authToken}}` with the actual Bearer token you get from the authentication process.
-- Response files (`<> 2024-11-12T123450.200.json`) will store the API responses for your reference.
