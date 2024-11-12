@@ -1,0 +1,253 @@
+POST http://localhost:8080/api/authenticate
+Content-Type: application/json
+Content-Length: 45
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=19A4B1597F32F22331491E9D00E51E0D
+
+{
+  "username": "seb",
+  "password": "1234"
+}
+
+<> 2024-11-12T124132.200.txt
+
+###
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+Content-Length: 45
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=19A4B1597F32F22331491E9D00E51E0D
+
+{
+  "username": "seb",
+  "password": "1234"
+}
+
+<> 2024-11-12T124103.200.txt
+
+###
+
+DELETE http://localhost:8080/api/product/3/delete
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZWIiLCJleHAiOjE3MzE0NDY2ODcsImlhdCI6MTczMTQxMDY4N30.rRSMWpZz5JwWGjgZQ9eyHoKGUWJRkW8BYI6b6jcicpw
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=19A4B1597F32F22331491E9D00E51E0D
+content-length: 0
+
+<> 2024-11-12T123843.200.txt
+
+###
+
+PATCH http://localhost:8080/api/product/2/update
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZWIiLCJleHAiOjE3MzE0NDY2ODcsImlhdCI6MTczMTQxMDY4N30.rRSMWpZz5JwWGjgZQ9eyHoKGUWJRkW8BYI6b6jcicpw
+Content-Type: application/json
+Content-Length: 96
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=19A4B1597F32F22331491E9D00E51E0D
+
+{
+  "name": "test update",
+  "description": "test20 update",
+  "price": 9.99,
+  "quantity": 10
+}
+
+<> 2024-11-12T123800.200.json
+
+###
+
+PATCH http://localhost:8080/api/product/2/update
+Content-Type: application/json
+Content-Length: 96
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=19A4B1597F32F22331491E9D00E51E0D
+
+{
+  "name": "test update",
+  "description": "test20 update",
+  "price": 9.99,
+  "quantity": 10
+}
+
+###
+
+GET http://localhost:8080/api/product/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZWIiLCJleHAiOjE3MzE0NDY2ODcsImlhdCI6MTczMTQxMDY4N30.rRSMWpZz5JwWGjgZQ9eyHoKGUWJRkW8BYI6b6jcicpw
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=19A4B1597F32F22331491E9D00E51E0D
+content-length: 0
+
+<> 2024-11-12T123650.200.json
+
+###
+
+POST http://localhost:8080/api/product/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZWIiLCJleHAiOjE3MzE0NDY2ODcsImlhdCI6MTczMTQxMDY4N30.rRSMWpZz5JwWGjgZQ9eyHoKGUWJRkW8BYI6b6jcicpw
+Content-Type: application/json
+Content-Length: 82
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=19A4B1597F32F22331491E9D00E51E0D
+
+{
+  "name": "test",
+  "description": "test20",
+  "price": 9.99,
+  "quantity": 10
+}
+
+<> 2024-11-12T123611.200.json
+
+###
+
+GET http://localhost:8080/api/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZWIiLCJleHAiOjE3MzE0NDY2ODcsImlhdCI6MTczMTQxMDY4N30.rRSMWpZz5JwWGjgZQ9eyHoKGUWJRkW8BYI6b6jcicpw
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=19A4B1597F32F22331491E9D00E51E0D
+content-length: 0
+
+<> 2024-11-12T123450.200.json
+
+###
+
+GET http://localhost:8080/api/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZWIiLCJleHAiOjE3MzE0NDY2ODcsImlhdCI6MTczMTQxMDY4N30.rRSMWpZz5JwWGjgZQ9eyHoKGUWJRkW8BYI6b6jcicpw
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=19A4B1597F32F22331491E9D00E51E0D
+content-length: 0
+
+<> 2024-11-12T123444.200.json
+
+###
+
+GET http://localhost:8080/api
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZWIiLCJleHAiOjE3MzE0NDY2ODcsImlhdCI6MTczMTQxMDY4N30.rRSMWpZz5JwWGjgZQ9eyHoKGUWJRkW8BYI6b6jcicpw
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=19A4B1597F32F22331491E9D00E51E0D
+content-length: 0
+
+###
+
+POST http://localhost:8080/api/authenticate
+Content-Type: application/json
+Content-Length: 45
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=19A4B1597F32F22331491E9D00E51E0D
+
+{
+  "username": "seb",
+  "password": "1234"
+}
+
+<> 2024-11-12T122813.200.txt
+
+###
+
+HEAD http://localhost:8080/api
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=19A4B1597F32F22331491E9D00E51E0D
+content-length: 0
+
+###
+
+GET http://localhost:8080/api/product/1
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=19A4B1597F32F22331491E9D00E51E0D
+content-length: 79
+
+{
+  "id": 0,
+  "name": "",
+  "description": "",
+  "price": 0,
+  "quantity": 0
+}
+
+###
+
+GET http://127.0.0.1:8080/api/products
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:8080/api/product/create
+Content-Type: application/json
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "produit 1",
+  "description": "ma decription",
+  "price": 13,
+  "quantity": 100
+}
+
+<> 2024-11-10T210954.500.json
+
+###
+
+GET http://localhost:8080/api/product/1
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 79
+
+{
+  "id": 0,
+  "name": "",
+  "description": "",
+  "price": 0,
+  "quantity": 0
+}
+
+<> 2024-11-10T210755.500.json
+
+###
+
+GET http://127.0.0.1:8080/api/products
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-10T210516.200.json
+
+###
+

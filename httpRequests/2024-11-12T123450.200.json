@@ -1,0 +1,9 @@
+[
+  {
+    "id": 2,
+    "name": "produit 2 update",
+    "description": "ma decription2 update too",
+    "price": 19.99,
+    "quantity": 10
+  }
+]
