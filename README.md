@@ -111,4 +111,3 @@ Authorization: Bearer {{authToken}}
 
 - Replace `{{authToken}}` with the actual Bearer token you get from the authentication process.
 - Response files (`<> 2024-11-12T123450.200.json`) will store the API responses for your reference.
-- 
