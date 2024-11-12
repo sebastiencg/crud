@@ -44,7 +44,6 @@ public class ProductController {
                 .orElseThrow(() -> new RuntimeException("Produit non trouvé avec l'id : " + id));
     }
 
-
     @PatchMapping("/product/{id}/update")
     public Product updateProduct(@PathVariable Long id, @RequestBody Product product) {
         return productRepository.findById(id).map(
