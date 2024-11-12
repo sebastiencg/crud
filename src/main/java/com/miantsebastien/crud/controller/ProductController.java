@@ -1,7 +1,10 @@
 package com.miantsebastien.crud.controller;
 
+import com.miantsebastien.crud.model.Comment;
 import com.miantsebastien.crud.model.Product;
 import com.miantsebastien.crud.repository.ProductRepository;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -32,13 +35,15 @@ public class ProductController {
     }
 
     @GetMapping("/product/{id}")
-    public Product getProductById(@PathVariable long id) {
-        return productRepository.findById(id).
-                orElseThrow(() -> new RuntimeException(
-                        "Produit non trouvé avec l'id : " + id
-                ));
-
+    public ResponseEntity<Product> getProductById(@PathVariable long id) {
+        return productRepository.findById(id)
+                .map(product -> {
+                    List<Comment> comments = product.getComments();
+                    return new ResponseEntity<>(product, HttpStatus.OK);
+                })
+                .orElseThrow(() -> new RuntimeException("Produit non trouvé avec l'id : " + id));
     }
+
 
     @PatchMapping("/product/{id}/update")
     public Product updateProduct(@PathVariable Long id, @RequestBody Product product) {
